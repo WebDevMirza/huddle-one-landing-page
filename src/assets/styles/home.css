@@ -10,6 +10,7 @@
 
 header,
 main,
+.stats,
 .card,
 .action {
   max-width: 375px;
@@ -34,7 +35,8 @@ footer {
   }
 
   section,
-  footer {
+  footer,
+  .stats {
     max-width: 1440px;
     width: 100%;
   }
@@ -87,6 +89,11 @@ main {
 
 .action {
   margin-top: 10rem;
+}
+
+/* Stats */
+.stats {
+  margin-top: 5rem;
 }
 
 /* Card */

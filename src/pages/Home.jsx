@@ -7,6 +7,7 @@ import { Hero } from "../compo/Hero";
 import "../assets/styles/home.css";
 import Feature from "../assets/data/feature.json";
 import { useState } from "react";
+import { Stats } from "../compo/Stats";
 
 export default function Home() {
   const [myFeature, setMyFeature] = useState(Feature);
@@ -15,7 +16,7 @@ export default function Home() {
     <div className="holder">
       <Header />
       <Hero />
-
+      <Stats />
       <div className="card-section">
         {myFeature.map(({ id, title, desc, image }) => {
           return <Card id={id} key={id} title={title} desc={desc} img={image} />;

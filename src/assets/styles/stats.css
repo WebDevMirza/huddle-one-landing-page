@@ -1,0 +1,30 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.stats p {
+  filter: contrast(0%);
+  margin-top: 0.5rem;
+}
+
+.stats img {
+  scale: 0.7;
+}
+
+@container (inline-size > 1024px) {
+  .stats {
+    flex-direction: row;
+  }
+}
