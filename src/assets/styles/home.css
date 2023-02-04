@@ -10,10 +10,17 @@
 
 header,
 main,
-section {
+.card,
+.action {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+}
+
+section,
+footer {
+  max-width: 100vw;
+  width: 100%;
 }
 
 @container (inline-size > 1024px) {
@@ -26,8 +33,10 @@ section {
     max-width: 850px;
   }
 
-  section {
-    max-width: 100%;
+  section,
+  footer {
+    max-width: 1440px;
+    width: 100%;
   }
 
   .card {

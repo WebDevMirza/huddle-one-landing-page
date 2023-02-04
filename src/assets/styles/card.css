@@ -13,6 +13,60 @@
   font-size: 1.5rem;
 }
 
+.cs-1,
+.cs-3 {
+  background-color: var(--VeryPaleBlue);
+  position: relative;
+}
+
+.cs-1::after {
+  position: absolute;
+  content: "";
+  background: url("../images/bg-section-top-mobile-1.svg") no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 400px;
+  top: -110px;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-1::before {
+  position: absolute;
+  content: "";
+  background: url("../images/bg-section-bottom-mobile-1.svg") no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 400px;
+  bottom: -400px;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-3::after {
+  position: absolute;
+  content: "";
+  background: url("../images/bg-section-top-mobile-2.svg") no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 400px;
+  top: -100px;
+  left: 0;
+  z-index: -1;
+}
+
+.cs-3::before {
+  position: absolute;
+  content: "";
+  background: url("../images/bg-section-bottom-mobile-2.svg") no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 400px;
+  bottom: -400px;
+  left: 0;
+  z-index: -1;
+}
+
 @container (inline-size > 1024px) {
   .card {
     display: grid;
@@ -31,5 +85,23 @@
 
   .card-section section:nth-of-type(even) .card-body {
     order: 1;
+  }
+
+  .cs-1::after {
+    background: url("../images/bg-section-top-desktop-1.svg") no-repeat;
+    top: -150px;
+  }
+
+  .cs-1::before {
+    background: url("../images/bg-section-bottom-desktop-1.svg") no-repeat;
+  }
+
+  .cs-3::after {
+    background: url("../images/bg-section-top-desktop-2.svg") no-repeat;
+    top: -150px;
+  }
+
+  .cs-3::before {
+    background: url("../images/bg-section-bottom-desktop-2.svg") no-repeat;
   }
 }

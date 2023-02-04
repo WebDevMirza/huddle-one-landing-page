@@ -1,9 +1,9 @@
 import "../assets/styles/card.css";
 
-export const Card = ({ title, desc, img }) => {
+export const Card = ({ id, title, desc, img }) => {
   return (
     <>
-      <section>
+      <section className={`cs-${id}`}>
         <div className="card">
           <div className="card-img">
             <img src={img} alt={`A picture of ${title} aspect.`} />

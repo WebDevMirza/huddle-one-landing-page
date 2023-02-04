@@ -18,7 +18,7 @@ export default function Home() {
 
       <div className="card-section">
         {myFeature.map(({ id, title, desc, image }) => {
-          return <Card key={id} title={title} desc={desc} img={image} />;
+          return <Card id={id} key={id} title={title} desc={desc} img={image} />;
         })}
       </div>
 
