@@ -1,0 +1,25 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+
+  /* border: 5px dotted red; */
+  /* min-height: 50px; */
+}
+
+header > div {
+  /* border: 5px dotted green; */
+  /* min-height: 50px; */
+}
+
+.btn-trial {
+  font-weight: 400;
+  color: var(--Pink);
+  float: right;
+}
+
+.btn-trial:hover,
+.btn-trial:focus-visible {
+  color: var(--LightPink);
+}

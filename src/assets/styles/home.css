@@ -1,0 +1,112 @@
+/* ================================
+   Layout
+   ================================ */
+
+.holder {
+  container-type: inline-size;
+  /* border: 4px dotted red;
+  min-height: 100vh; */
+}
+
+header,
+main,
+section {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@container (inline-size > 1024px) {
+  header {
+    max-width: 1024px;
+    width: 95%;
+  }
+
+  main {
+    max-width: 850px;
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  .card {
+    max-width: 875px;
+  }
+}
+
+/* ================================
+   Common
+   ================================ */
+
+a {
+  display: inline-block;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border: 1px solid var(--Pink);
+  border-radius: 2rem;
+  letter-spacing: 0.04em;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  outline-color: var(--LightPink);
+  border: 1px solid var(--LightPink);
+}
+
+/* ================================
+   V spacing
+   ================================ */
+
+header {
+  margin-top: 1.5rem;
+}
+
+main {
+  margin-top: 6.5rem;
+}
+
+.btn-action {
+  margin-top: 2rem;
+}
+
+.hero-img {
+  margin-top: 5rem;
+}
+
+.action {
+  margin-top: 10rem;
+}
+
+/* Card */
+.card {
+  margin-top: 13rem;
+}
+
+.card-body h2 {
+  margin-top: 6rem;
+}
+
+.card-body p {
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 10rem;
+}
+
+@container (inline-size > 1024px) {
+  header {
+    margin-top: 3rem;
+  }
+
+  .card-body h2 {
+    margin-top: 0;
+  }
+
+  footer {
+    margin-top: 18rem;
+  }
+}

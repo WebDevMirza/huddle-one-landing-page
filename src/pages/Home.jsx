@@ -1,0 +1,29 @@
+import { Action } from "../compo/Action";
+import { Card } from "../compo/Card";
+import { Footer } from "../compo/Footer";
+import { Header } from "../compo/Header";
+import { Hero } from "../compo/Hero";
+
+import "../assets/styles/home.css";
+import Feature from "../assets/data/feature.json";
+import { useState } from "react";
+
+export default function Home() {
+  const [myFeature, setMyFeature] = useState(Feature);
+
+  return (
+    <div className="holder">
+      <Header />
+      <Hero />
+
+      <div className="card-section">
+        {myFeature.map(({ id, title, desc, image }) => {
+          return <Card key={id} title={title} desc={desc} img={image} />;
+        })}
+      </div>
+
+      <Action />
+      <Footer />
+    </div>
+  );
+}

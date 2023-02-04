@@ -1,0 +1,46 @@
+main {
+  padding: 0 0.625rem;
+  text-align: center;
+
+  /* outline: 4px dotted red; */
+  /* min-height: 400px; */
+}
+
+main > div {
+  /* outline: 4px dotted gray; */
+  /* min-height: 300px; */
+}
+
+.hero-body {
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.hero-title {
+  font-family: var(--ff-secondary);
+  color: var(--VeryDarkCyan);
+  font-size: 1.875rem;
+}
+
+.hero-text {
+  font-weight: 400;
+}
+
+@container (inline-size > 1024px) {
+  .hero-text {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btn-action {
+  background-color: var(--Pink);
+  color: var(--VeryPaleBlue);
+  font-weight: 600;
+}
+
+.btn-action:hover,
+.btn-action:focus-visible {
+  background-color: var(--LightPink);
+}

@@ -1,0 +1,12 @@
+section {
+  text-align: center;
+}
+
+.action h1 {
+  font-family: var(--ff-secondary);
+  line-height: 1.5;
+}
+
+.action .btn-action {
+  margin-top: 0.25rem;
+}
