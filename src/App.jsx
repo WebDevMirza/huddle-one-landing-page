@@ -10,3 +10,7 @@ function App() {
 }
 
 export default App;
+
+// Goals
+// 1. Adding transition on page scrolling
+// 2. Optimization
