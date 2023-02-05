@@ -1,10 +1,17 @@
 footer {
-  min-height: 400px;
+  position: relative;
+  color: var(--VeryPaleBlue);
+  letter-spacing: 0.03em;
+  line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--VeryDarkCyan);
-  position: relative;
   /* border: 4px dotted red; */
+}
+
+.footer > * {
+  padding: 2.25rem;
+  /* border: 2px dotted white; */
 }
 
 footer::after {
@@ -17,10 +24,119 @@ footer::after {
   top: -50px;
 }
 
+.footer-newsletter > * + * {
+  margin-top: 2rem;
+}
+
+.footer-newsletter h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  margin-top: 1rem;
+}
+
+.footer-newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.875rem;
+}
+
+.footer-newsletter input,
+.footer-newsletter button {
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+.footer-newsletter input {
+  padding: 0.875rem 1rem;
+  min-width: 100%;
+}
+
+.footer-newsletter button {
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background-color: var(--Pink);
+  color: var(--VeryPaleBlue);
+  cursor: pointer;
+}
+
+.footer-newsletter button:hover,
+.footer-newsletter button:focus-visible {
+  background-color: var(--LightPink);
+  transition: all 0.5s ease;
+}
+
+.footer-contact .footer-text {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact a {
+  color: inherit;
+}
+
+.social {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-logo {
+  filter: invert(1);
+  width: 50%;
+}
+
+svg {
+  fill: var(--VeryPaleBlue);
+  display: inline-block;
+}
+
+.social a:hover > svg *,
+.social a:hover,
+.social a:focus > svg *,
+.social a:focus {
+  fill: aqua;
+}
+
 @container (inline-size > 1024px) {
   footer::after {
     background: url("../images/bg-footer-top-desktop.svg") no-repeat;
     height: 300px;
     top: -150px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .footer > * {
+    max-width: 500px;
+    /* border: 2px dotted white; */
+  }
+
+  .footer-newsletter form {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .footer-newsletter {
+    order: 2;
+  }
+
+  .footer-contact {
+    order: 1;
   }
 }
