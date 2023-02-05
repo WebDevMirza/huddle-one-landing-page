@@ -36,6 +36,7 @@ footer::after {
 }
 
 .footer-newsletter form {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -49,6 +50,7 @@ footer::after {
 }
 
 .footer-newsletter input {
+  margin-top: 30px;
   padding: 0.875rem 1rem;
   min-width: 100%;
 }
@@ -108,6 +110,13 @@ svg {
   fill: aqua;
 }
 
+.error {
+  color: var(--LightRed);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @container (inline-size > 1024px) {
   footer::after {
     background: url("../images/bg-footer-top-desktop.svg") no-repeat;
@@ -132,11 +141,19 @@ svg {
     grid-template-columns: 4fr 1fr;
   }
 
+  .footer-newsletter input {
+    margin-top: 0;
+  }
+
   .footer-newsletter {
     order: 2;
   }
 
   .footer-contact {
     order: 1;
+  }
+
+  .error {
+    top: 50px;
   }
 }

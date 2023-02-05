@@ -2,8 +2,21 @@ import "../assets/styles/footer.css";
 import Logo from "../assets/images/logo.svg";
 import Tel from "../assets/images/icon-phone.svg";
 import Email from "../assets/images/icon-email.svg";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 export const Footer = () => {
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string().email("Check your email please").required("Check your email please"),
+    }),
+    onSubmit: (value) => {
+      alert(`A varification link is sent to ${value.email}`);
+    },
+  });
   return (
     <>
       <footer>
@@ -14,8 +27,9 @@ export const Footer = () => {
               To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam
               or pass on your email address
             </p>
-            <form>
-              <input type="email" name="email" id="email" />
+            <form onSubmit={formik.handleSubmit} noValidate>
+              <input type="email" name="email" id="email" value={formik.values.email} onChange={formik.handleChange} />
+              {formik.errors.email && <p className="error">{formik.errors.email}</p>}
               <button type="submit">Subscribe</button>
             </form>
           </div>
