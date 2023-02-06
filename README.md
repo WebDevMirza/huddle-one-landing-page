@@ -4,9 +4,10 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 ## Table of contents
 
+- [Performance Test](#performance-test)
 - [Screenshot](#screenshot)
-- [What I've Learnt](#What-I've-Learnt)
-- [Willing To Reach Advanced Goals](#Willing-To-Reach-Advanced-Goals)
+- [What I've Learnt](#what-ive-learnt)
+- [Willing To Reach Advanced Goals](#willing-to-reach-advanced-goals)
 - [Author](#author)
 - [Date](#date)
 
@@ -24,7 +25,8 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 ### Mobile
 
-![](./sm.webp)
+
+<img src="./sm.webp" width="400" />
 
 ## What I've Learnt
 
