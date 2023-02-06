@@ -11,14 +11,14 @@ export const Stats = () => {
             <div>
               <img src={Community} alt="" width={47} height={41} />
             </div>
-            <h3>1.4k+</h3>
+            <h2>1.4k+</h2>
             <p>Communities Formed</p>
           </div>
           <div className="message">
             <div>
               <img src={Message} alt="" width={47} height={41} />
             </div>
-            <h3>2.7m+</h3>
+            <h2>2.7m+</h2>
             <p>Message Sent</p>
           </div>
         </div>
