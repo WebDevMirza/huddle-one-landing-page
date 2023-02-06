@@ -17,6 +17,7 @@ header > div {
   font-weight: 400;
   color: var(--Pink);
   float: right;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 24px;
 }
 
 .btn-trial:hover,
