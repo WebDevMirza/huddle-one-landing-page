@@ -12,7 +12,15 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 ## Screenshot
 
-![](./sm.gif)
+![](./ss.gif)
+
+### Desktop
+
+![](./lg.webp)
+
+### Mobile
+
+![](./sm.webp)
 
 ## What I've Learnt
 
