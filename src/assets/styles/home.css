@@ -12,7 +12,8 @@ header,
 main,
 .stats,
 .card,
-.action {
+.action,
+.footer {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -38,7 +39,8 @@ footer {
 
   section,
   footer,
-  .stats {
+  .stats,
+  .footer {
     max-width: 1440px;
     width: 100%;
   }
