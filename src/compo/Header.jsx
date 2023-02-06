@@ -6,7 +6,7 @@ export const Header = () => {
     <>
       <header>
         <div className="logo">
-          <a href="#" role="link" aria-level="Huddle home page">
+          <a href="#">
             <img src={Logo} alt="Huddle" width={240} height={39} />
           </a>
         </div>

@@ -34,7 +34,7 @@ export const Footer = () => {
                 id="email"
                 value={formik.values.email}
                 onChange={formik.handleChange}
-                aria-level="Email input"
+                placeholder={"example@gmail.com"}
               />
               {formik.errors.email && <p className="error">{formik.errors.email}</p>}
               <button type="submit">Subscribe</button>

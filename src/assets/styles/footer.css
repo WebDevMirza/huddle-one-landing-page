@@ -54,6 +54,10 @@ footer::after {
   padding: 0.875rem 1rem;
   min-width: 100%;
 }
+.footer-newsletter input::placeholder {
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+}
 
 .footer-newsletter button {
   padding: 0.875rem 2rem;
