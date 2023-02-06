@@ -22,13 +22,20 @@ export const Footer = () => {
       <footer>
         <div className="footer">
           <div className="footer-newsletter">
-            <h3>NEWSLETTER</h3>
+            <h1>NEWSLETTER</h1>
             <p>
               To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam
               or pass on your email address
             </p>
             <form onSubmit={formik.handleSubmit} noValidate>
-              <input type="email" name="email" id="email" value={formik.values.email} onChange={formik.handleChange} />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                aria-level="Email input"
+              />
               {formik.errors.email && <p className="error">{formik.errors.email}</p>}
               <button type="submit">Subscribe</button>
             </form>
