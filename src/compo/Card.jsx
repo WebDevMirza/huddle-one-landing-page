@@ -6,7 +6,7 @@ export const Card = ({ id, title, desc, img }) => {
       <section className={`cs-${id}`}>
         <div className="card">
           <div className="card-img">
-            <img src={img} alt={`A picture of ${title} aspect.`} />
+            <img src={img} alt={`A picture of ${title} aspect.`} width={407} height={333} />
           </div>
           <div className="card-body">
             <h2 className="card-title">{title}</h2>

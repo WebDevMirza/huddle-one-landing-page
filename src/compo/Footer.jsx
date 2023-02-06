@@ -36,18 +36,18 @@ export const Footer = () => {
 
           <div className="footer-contact">
             <div className="footer-logo">
-              <img src={Logo} alt="Huddle logo" />
+              <img src={Logo} alt="Huddle logo" width={214} height={35} />
             </div>
             <p className="footer-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum
               a, ultrices quis sem.
             </p>
             <p className="contact">
-              <img src={Tel} alt="" />
+              <img src={Tel} alt="" width={20} height={16} />
               Phone: <a href="tel:+15431234567">+1-543-123-4567</a>
             </p>
             <p className="contact">
-              <img src={Email} alt="" />
+              <img src={Email} alt="" width={20} height={16} />
               <a href="mailto:example@huddle.com">example@huddle.com</a>
             </p>
 

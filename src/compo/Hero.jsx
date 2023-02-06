@@ -16,7 +16,7 @@ export const Hero = () => {
           </a>
         </div>
         <div className="hero-img">
-          <img src={HeroImg} alt="" />
+          <img src={HeroImg} alt="" width={830} height={593} />
         </div>
       </main>
     </>
