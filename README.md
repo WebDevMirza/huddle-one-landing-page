@@ -10,6 +10,10 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 - [Author](#author)
 - [Date](#date)
 
+## Performance Test
+
+![](./per.jpg)
+
 ## Screenshot
 
 ![](./ss.gif)
